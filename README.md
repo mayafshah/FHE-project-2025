@@ -5,7 +5,7 @@ This repository contains two major components: **noise growth experiments** and 
 ---
 
 ## Project Structure
-
+FHE-project-2025/
 ├── noise_growth_experiment/
 │ ├── client_noise.py # Client-side loop to test decryption accuracy
 │ ├── server_noise.py # Server-side circuit performing repeated scalar operations
