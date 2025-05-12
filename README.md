@@ -7,17 +7,23 @@ This repository contains two major components: **noise growth experiments** and 
 ## Project Structure
 FHE-project-2025/
 **noise_growth_experiment/**
- -  client_noise.py # Client-side loop to test decryption accuracy
- -  server_noise.py # Server-side circuit performing repeated scalar operations
- -  client_data_noise.txt # Logs of decrypted results per iteration
- -  server_data_noise.txt # Logs of ciphertext evolution per iteration
- -  check_result_noise.py # Validation script to detect when noise breaks correctness
+ -  noisy_client.py # Client-side loop to test decryption accuracy
+ -  noisy_server.py # Server-side circuit performing repeated scalar operations
+ -  client_data.csv # Log of decrypted results per iteration
+ -  server_data.txt # Log of server's secret function
+ -  check_result.py # Validation script to detect when noise breaks correctness
+ -  plot_noise_data.py # doesn't work since I couldn't collect enough valid data to plot
+ -  noise_summary.csv # supposed to be the log of all the noise experiment results
 
 **compile_time_experiment/**
- -  client_timing.py # Sends encrypted vectors and times execution
- -  server_timing.py # Compiles and runs dot product circuits
+ -  client.py # Sends encrypted vectors and times execution
+ -  server.py # Compiles and runs dot product circuits
  -  timing_data.csv # Output of computation & compilation times
- -  plot_timings.py # Script to visualize timing data
+ -  plot_timing_data.py # Script to visualize timing data
+ -  check_result.py # Validation script to do plaintext calculation + check if decrypted result matches plaintext
+ -  client_data.txt # Stores decrypted vector result and client's initial vector
+ -  server.zip # Stores compiled circuit needed to create server  
+ -  server_data.txt # Stores server secret vector + compile/compute times (seconds)
 
 ---
 
