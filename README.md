@@ -41,20 +41,20 @@ FHE-project-2025/
 
      ```bash
      # Terminal 1
-     python noise_growth_experiment/server_noise.py
+     python noise_growth_experiment/noisy_server.py
 
      # Terminal 2
-     python noise_growth_experiment/client_noise.py
+     python noise_growth_experiment/noisy_client.py
      ```
 
    - For **Timing Experiment**:
 
      ```bash
      # Terminal 1
-     python timing_experiment/server_timing.py
+     python timing_experiment/server.py
 
      # Terminal 2
-     python timing_experiment/client_timing.py
+     python timing_experiment/client.py
      ```
 
 ## Timing Analysis
@@ -64,7 +64,7 @@ The **timing experiment** evaluates how both compilation time and encrypted comp
 
 
 Each test runs a homomorphic dot product operation between a client-sent encrypted vector and a fixed server-side plaintext vector. Results are logged to `timing_data.csv` and visualized using `plot_timings.py`.
-
+The server never sees the plaintext input vector, and the client never sees the server secret vector.
 
 ## Noise Growth Experiment
 
