@@ -63,7 +63,7 @@ The **timing experiment** evaluates how both compilation time and encrypted comp
 [10, 25, 50, 100, 200, 500, 1000, 2000, 2500, 5000, 10000]
 
 
-Each test runs a homomorphic dot product operation between a client-sent encrypted vector and a fixed server-side plaintext vector. Results are logged to `timing_data.csv` and visualized using `plot_timings.py`.
+Each test runs a homomorphic dot product operation between a client-sent encrypted vector and a fixed server-side plaintext vector. Results are logged to `timing_data.csv` and visualized using `plot_timing_data.py`.
 The server never sees the plaintext input vector, and the client never sees the server secret vector.
 
 ## Noise Growth Experiment
